@@ -1,7 +1,7 @@
 ﻿using System;
 using RiceNet;
 
-namespace RiceNet_Example
+namespace Server_Example
 {
     class ServerExample
     {
@@ -15,7 +15,7 @@ namespace RiceNet_Example
                 if (server.AcceptedClientsCount() > 0)
                     acceptedClient = server.GetAcceptedClient(0);
             }
-            
+
             Console.WriteLine(acceptedClient.ReceiveString());
 
             server.Stop();
