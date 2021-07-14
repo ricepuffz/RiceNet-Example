@@ -16,7 +16,7 @@ namespace Server_Example
                     acceptedClient = server.GetAcceptedClient(0);
             }
 
-            Console.WriteLine(acceptedClient.ReceiveString());
+            Console.WriteLine(acceptedClient.Client.ReceiveString());
 
             server.Stop();
         }
